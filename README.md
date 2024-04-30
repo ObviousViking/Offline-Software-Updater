@@ -7,29 +7,29 @@ Create a central repository somewhere that all machines on your network can acce
 
 $centralPath = "C:\USEFUL_TOOLS\Software Updater\TEST\" # <<<<<< change to central repo for your softare updaters
 
-Each software you want to use needs its own folder, which would look like this:
-C:\USEFUL_TOOLS\Software Updater\TEST\VLC
-C:\USEFUL_TOOLS\Software Updater\TEST\7zip
-C:\USEFUL_TOOLS\Software Updater\TEST\Notepad++
+Each software you want to use needs its own folder, which would look like this:  
+C:\USEFUL_TOOLS\Software Updater\TEST\VLC  
+C:\USEFUL_TOOLS\Software Updater\TEST\7zip  
+C:\USEFUL_TOOLS\Software Updater\TEST\Notepad++  
 
-Put only the newest installer in its respective folder.
+Put only the newest installer in its respective folder.  
 
-IMPOORTANT: make sure you add a folder centrally for the script. C:\USEFUL_TOOLS\Software Updater\TEST\Script   <<<<< this one is required in order to update the script automatically
-This way you only need update 1 version of the script with new software and it will automatically be rolled out.
+IMPOORTANT: make sure you add a folder centrally for the script. C:\USEFUL_TOOLS\Software Updater\TEST\Script   <<<<< this one is required in order to update the script automatically  
+This way you only need update 1 version of the script with new software and it will automatically be rolled out.  
 
-You then need to add the software to the central script. Ive left some examples in for the programs above. Its pretty straight forward.
+You then need to add the software to the central script. Ive left some examples in for the programs above. Its pretty straight forward.  
 
-Note: Xways was a special use case for myself and just needed extracting to a folder for use. This could be removed if not needed.
+Note: Xways was a special use case for myself and just needed extracting to a folder for use. This could be removed if not needed.  
 
-How to use:
-On each machine you want to update(should be a one time set up):
+How to use:  
+On each machine you want to update(should be a one time set up):  
 
-Create a folder in the root of C: named 'USEFUL_TOOLS'.
+Create a folder in the root of C: named 'USEFUL_TOOLS'.  
 
-Inside that create 3 more folders, 'Hashes', 'Temp' and 'Files'
+Inside that create 3 more folders, 'Hashes', 'Temp' and 'Files'  
 
-Put the Software Updater.ps1 in the files folder and set a scheduled task to run it when you like. I had 6am every morning.
-
+Put the Software Updater.ps1 in the files folder and set a scheduled task to run it when you like. I had 6am every morning.  
+  
 
 What should happen at 6am?  
 Script runs  

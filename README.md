@@ -31,15 +31,15 @@ Inside that create 3 more folders, 'Hashes', 'Temp' and 'Files'
 Put the Software Updater.ps1 in the files folder and set a scheduled task to run it when you like. I had 6am every morning.
 
 
-What should happen at 6am?
-Script runs
-Checks the central location for files
-If there then hash that installer and compare against locally stored hash from previous install
-If no hash or hash different, copy installer locally to temp folder
-Check if process running and wait for user input
-Run installer or skip if user skipped
-Update hash
-Loop through software
-Check if central script has been updated
-If yes copy locally
+What should happen at 6am?  
+Script runs  
+Checks the central location for files  
+If there then hash that installer and compare against locally stored hash from previous install  
+If no hash or hash different, copy installer locally to temp folder  
+Check if process running and wait for user input  
+Run installer or skip if user skipped  
+Update hash  
+Loop through software  
+Check if central script has been updated  
+If yes copy locally  
 Clean temp folder
